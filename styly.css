@@ -1,5 +1,6 @@
 body{
   background-image: linear-gradient(#615dad, #ffc8da);
+  font-family: sans-serif;
   height: 100vh;
   color: #ffffff;
   display: flex;
@@ -9,7 +10,7 @@ body{
 
 .firstPage {
   margin-top: 75px;
-  width: 400px;
+  width: 370px;
   max-width: 50%;
   display: flex;
   flex-direction: column;
@@ -17,7 +18,7 @@ body{
 
 .firstPage__picture {
   width: 100%;
-  border-radius: 10px 10px 0 0;
+  border-radius: 8px 8px 0 0;
 }
 
 .firstPage__text {
@@ -27,7 +28,7 @@ body{
 }
 
 .firstPage__heading {
-  font-family: Lobster;
+  font-family: Lobster, sans-serif;
   font-size: 3rem;
   font-weight: 200;
   width: 100%;
@@ -41,13 +42,17 @@ body{
   padding-top: 0;
 }
 
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .firstPage__button {
   width: 100%;
   padding: 10px 0 10px 0;
   text-align: center;
   /* border: blue solid 2px; */
 }
-
 
  .firstPage__button--green {
   background-color: #1fcca4;
