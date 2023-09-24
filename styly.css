@@ -10,10 +10,16 @@ body{
 
 .firstPage {
   margin-top: 75px;
-  width: 370px;
-  max-width: 50%;
+  width: 80%;
+  /* max-width: 50%; */
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 600px){
+  .firstPage {
+    width: 370px;
+  }
 }
 
 .firstPage__picture {
@@ -31,7 +37,7 @@ body{
   font-family: Lobster, sans-serif;
   font-size: 3rem;
   font-weight: 200;
-  width: 100%;
+  max-width: 100%;
   margin-top: 20px;
   /* border: blue solid 2px; */
 }
