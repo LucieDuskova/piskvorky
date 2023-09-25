@@ -37,8 +37,12 @@ html{
   
   .button__white-color{
     color: #ffffff;
-    height: 40px;
+    height: 30px;
     border: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-family: sans-serif;
   }
   
   .button__background-green{
@@ -63,11 +67,11 @@ html{
   }
   
   
-  .background-green:hover{
+  .button__background-green:hover{
   background-color: #1cbb96;
   }
   
-  .background-blue:hover{
+  .button__background-blue:hover{
     background-color: #0090e9;
     }
   
