@@ -95,7 +95,6 @@ html{
     width: 4vw;
     height: 4vw;
     text-align: center;
-    font-size: 24px;
     background-color: rgb(255, 255, 255, 0.2) ;
     border: 1px solid black;
   }
@@ -134,6 +133,25 @@ html{
       margin-right: 10px;
     }
   
-    .cell:hover{
+    .cell:hover,
+    .cell:focus{
       background-color: rgb(255, 255, 255, 0.4);
     }
+
+.board__field--circle{
+  background-image: url(circleBlack.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  animation: linear;
+  transition: 0.15s;
+}
+
+.board__field--cross{
+  background-image: url(crossBlack.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  animation: linear;
+  transition: 0.15s;
+}

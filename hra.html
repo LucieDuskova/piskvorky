@@ -6,6 +6,7 @@
   <title>Hra piškvorky</title>
   <link rel="stylesheet" href="styly.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+  <script type="module" src="hra.js"></script>
 </head>
 <body>
 
@@ -18,7 +19,7 @@
       <div class="menu__left">
         <p class="menu__play">HRAJE: 
         </p>
-        <img src="circle.svg" alt="ikona hráče kolečko">
+        <img id="ikon_player" src="circle.svg" alt="ikona hráče">
       </div>
       <!-- tlačítka v menu -->
       <div class="menu__right">
@@ -29,7 +30,7 @@
         </button>
         <button class="button__background-blue ikon" >
           <a href="hra.html">
-            <img src="restart.svg" alt="ikona ">
+            <img id="restart" src="restart.svg" alt="ikona ">
           </a>
         </button>
       </div>
@@ -37,16 +38,16 @@
 
     <!-- Hrací plán 10x10 -->
     <div class="game-board-div">
-      <button class="cell"></button>
-      <button class="cell"></button>
-      <button class="cell"></button>
-      <button class="cell"></button>
-      <button class="cell"></button>
-      <button class="cell"></button>
-      <button class="cell"></button>
-      <button class="cell"></button>
-      <button class="cell"></button>
-      <button class="cell"></button>
+      <button class="cell" id="cell_1"></button>
+      <button class="cell" id="cell_2"></button>
+      <button class="cell" id="cell_3"></button>
+      <button class="cell" id="cell_4"></button>
+      <button class="cell" id="cell_5"></button>
+      <button class="cell" id="cell_6"></button>
+      <button class="cell" id="cell_7"></button>
+      <button class="cell" id="cell_8"></button>
+      <button class="cell" id="cell_9"></button>
+      <button class="cell" id="cell_10"></button>
 
       <button class="cell"></button>
       <button class="cell"></button>
