@@ -38,14 +38,27 @@ const pridejZnak = (event) => {
   // vyhodnocení vítěze
   const winnerIs = findWinner(buttonsArraySymbol);
 
-  if (winnerIs === 'o') {
-    setTimeout(alert('Vyhrál hráč se symbolem kolečko!'), 300);
-  } else if (winnerIs === 'x') {
-    setTimeout(alert('Vyhrál hráč se symbolem křížek!'), 300);
-  } else if (winnerIs === 'tie') {
-    setTimeout(alert('Hra skončila remízou!'), 300);
+  // const vyskakovaciOKnoProViteze = ()=> {
+  //   if (winnerIs === 'o') {
+  //     setTimeout(alert('Vyhrál hráč se symbolem kolečko!'), 300);
+  //   } else if (winnerIs === 'x') {
+  //     setTimeout(alert('Vyhrál hráč se symbolem křížek!'), 300);
+  //   } else if (winnerIs === 'tie') {
+  //     setTimeout(alert('Hra skončila remízou!'), 300);
+  //   }
+  //   }; 
+
+    setTimeout(()=> {
+      if (winnerIs === 'o') {
+        setTimeout(alert('Vyhrál hráč se symbolem kolečko!'), 300);
+      } else if (winnerIs === 'x') {
+        setTimeout(alert('Vyhrál hráč se symbolem křížek!'), 300);
+      } else if (winnerIs === 'tie') {
+        setTimeout(alert('Hra skončila remízou!'), 300);
+      }
+      }, 300)
   }
-}; ˇ
+
 // až zde konče f-ce PřidejZnak - teď už i vyhodnocuje
 
 // fuknce na posluchače všech tlačítek
